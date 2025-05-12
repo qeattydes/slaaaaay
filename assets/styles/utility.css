@@ -1,0 +1,40 @@
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.w20{width: 20%;}
+.w30{width: 30%;}
+.w25{width: 25%;}
+.w40{width: 40%;}
+.w50{width: 50%;}
+.w75{width: 75%;}
+.w100{width: 100%;}
+.h100{height: 100%;}
+
+.df{
+    display: flex;
+}
+.jcc{
+    justify-content: center;
+}
+.jcsb{
+    justify-content: space-between;
+}
+.jce{
+    justify-content: end;
+}
+.aic{
+    align-items: center;
+}
+.aie{
+    align-items: end;
+}
+.aib{
+    align-items: baseline;
+}
+.column-dir{
+    flex-direction: column;
+}
+.poiret{
+    font-family: "Poiret";
+}

@@ -1,0 +1,77 @@
+header{
+    background: url(../images/milad-fakurian-dvfph1sB-oA-unsplash.jpg);
+    background-size: cover;
+    color: white;
+    padding: 20px;
+}
+header .logo{
+    font-size: var(--font-size-xl);
+}
+header nav{
+    gap: 16px;
+    font-weight: 500;
+
+}
+header nav a::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: var(--color-f);
+    margin-top: 1px;
+    transition: .3s ease;
+}
+header nav a:hover::after{
+    width: 100%;
+    background-color: #9bb9d3;
+}
+header nav a{
+    transition: .3s ease;
+}
+header nav a:hover{
+    color:  #9bb9d3;
+}
+header .welcome{
+    padding-top: 6rem;
+   
+}
+header .welcome h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+header .welcome .separate{
+    height: 2px;
+    background-color: var(--color-f);
+    margin: 2rem 0;
+}
+header .welcome > a{
+    padding: 10px 20px;
+    border: 2px solid var(--color-f);
+    text-transform: uppercase;
+    transition: .4s ease-in-out;
+    margin-bottom: 6rem;
+}
+header .welcome > a:hover{
+    color: #9bb9d3;
+    border-color: #9bb9d3;
+}
+
+header .welcome .welcome-footer .line{
+    height: 2px;
+    background-color: var(--color-f);
+    position: relative;
+}
+header .welcome .welcome-footer .line::after{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    background-color: #9bb9d3;
+    transition: .3s ease-out;
+}
+header .welcome .welcome-footer a:hover .line::after{
+    width: 80%;
+}
+header .welcome .welcome-footer{
+    gap: 1rem;
+}
