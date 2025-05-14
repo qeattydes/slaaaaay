@@ -1,7 +1,8 @@
 header{
-    background: url(../images/milad-fakurian-dvfph1sB-oA-unsplash.jpg);
+    background: url(../images/anastasiya-badun-3gUw1oIVgAg-unsplash\ \(1\).jpg);
     background-size: cover;
     color: white;
+    background-position-y: center;
     padding: 20px;
 }
 header .logo{
@@ -74,4 +75,144 @@ header .welcome .welcome-footer a:hover .line::after{
 }
 header .welcome .welcome-footer{
     gap: 1rem;
+}
+section.about .images{
+    gap: 1.5rem;
+}
+section.about .images .item-bg{
+    width: calc(100%/3);
+    height: 27rem;
+    background: #9bb9d3;
+}
+section.about .images .item-bg:nth-child(1) .item-img{
+    background-image: url(../images/ioana-cristiana-0WW38q7lGZA-unsplash.jpg);
+}
+section.about .images .item-bg:nth-child(2) .item-img{
+    background-image: url(../images/robson-melo-JnpyJhK7Nfc-unsplash.jpg);
+}
+section.about .images .item-bg:nth-child(3) .item-img{
+    background-image: url(../images/rasheeque-ahnaf-piash-liUvurgYGyw-unsplash.jpg);
+}
+section.about .images .item-img{
+    background-size: cover;
+    transition: .3s ease-out;
+}
+section.about .images .item-fg{
+    background: linear-gradient(45deg, #9bb9d380, #4153626e);
+    gap: 1.5rem;
+    color: var(--color-f);
+    font-size: 3rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: .3s ease-out;
+}
+section.about .images .item-bg:hover .item-img{
+    transform: translate(-1rem, -1rem);
+}
+section.about .images .item-bg:hover .item-fg{
+    opacity: 1;
+}
+section.metrics{
+    margin-top: 2.5rem;
+    background-color: #9bb9d3;
+}
+section.metrics .item{
+    padding: 5rem 0;
+    border-left: 2px solid #ccc;
+    gap: 0.25rem;
+    color: var(--color-f);
+}
+section.metrics .item:nth-child(5){
+    border-right: 2px solid #ccc;
+}
+section.metrics .item h3{
+    font-weight: 600;
+}
+section.metrics .item p{
+    text-transform: uppercase;
+    text-align: center;
+}
+section.services .wrapper{
+    flex-wrap: wrap;
+}
+section.services .wrapper .service{
+    width: 33%;
+    /* height: 8rem; */
+    gap: 1rem;
+    
+    /* background-color: #9bb9d3; */
+}
+section.services .wrapper .service .icon{
+    font-size: 32px;
+    color: #9bb9d3;
+}
+section.services .wrapper .service .description{
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+section.services .wrapper .separate{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(222, 226, 231);
+    margin: 1rem 0;
+}
+section.devices{
+    background: url(../images/ioana-cristiana-0WW38q7lGZA-unsplash.jpg);
+    background-size: cover;
+}
+section.devices .images{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 2rem;
+}
+section.devices .images .smartphone{
+    position: absolute;
+    width: 60%;
+    bottom: -200px;
+    right: -200px;
+    transition: .5s ease-out;
+}
+section.devices .images .tablet{
+    overflow: hidden;
+}
+section.devices .images .tablet img{
+    margin-bottom: -300px;
+}
+section.devices:hover .images .smartphone{
+    transform: rotate(15deg) translateX(200px);
+}
+section.wedo .accordion{
+    gap: 1.5rem;
+
+}
+section.wedo .accordion img{
+    height: 600px;
+}
+section.wedo .accordion .accord .title{
+    height: 60px;
+    border: 1px solid #4153626e;
+    border-bottom: none;
+    padding: 1.5rem;
+}
+section.wedo .accordion .accord .description{
+    height: 0px;
+    border: 1px solid #4153626e;
+    padding: 0 1.5rem;
+    overflow: hidden;
+    transition: .3s ease-out;
+}
+#accord-1:checked ~ #label-accord-1 .description,
+#accord-2:checked ~ #label-accord-2 .description,
+#accord-3:checked ~ #label-accord-3 .description{
+    height: 150px;
+}
+section.wedo .accordion .accord .description p{
+    margin-top: 1.5rem;
+}
+section.wedo input{
+    display: none;
+}
+section.wedo .interact{
+    gap: 1.125rem;
 }
