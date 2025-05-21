@@ -69,3 +69,13 @@ section .title h4{
 body{
     overflow-x: hidden;
 }
+
+.italic{
+    font-style: italic;
+}
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
