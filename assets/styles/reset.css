@@ -137,4 +137,5 @@ p {
 
 html {
     color: var(--color-2);
+    scroll-behavior: smooth;
 }
